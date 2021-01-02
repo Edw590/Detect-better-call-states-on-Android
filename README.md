@@ -3,7 +3,7 @@ Detecting better call states on Android with RINGING, OFFHOOK, and IDLE
 
 ### Copied from a question I posted and answered on StackOverflow
 -----------------
-Link to the question: 
+Link to the question: https://stackoverflow.com/questions/65535193/detect-better-call-states-on-android-with-ringing-offhook-and-idle.
 
 A week ago, for a week I tried to have an app I'm making completely independent detecting call states. I'm on Lollipop 5.1, so I can't use PRECISE_CALL_STATE that exists from Marshmallow upwards. I'm restricted to the usual CALL_STATE_RINGING, OFFHOOK and IDLE.
 
