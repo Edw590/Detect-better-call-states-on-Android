@@ -53,7 +53,7 @@ public static String[][] get_call_phase(Context context, int state, String incom
             //System.out.println("RINGING - " + incomingNumber);
 
             // New incoming call (there are no calls in the current processing call list).
-            if (calls_state.size() == 0) { // Ou seja, estava em IDLE.
+            if (calls_state.size() == 0) { // Which means, was in IDLE.
                 ArrayList<String> arrayList = new ArrayList<>();
                 arrayList.add(incomingNumber);
                 arrayList.add(BETTER_CALL_STATE_INCOMING);
