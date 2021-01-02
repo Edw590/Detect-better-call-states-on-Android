@@ -1,0 +1,23 @@
+CALL_RINGING_NEW:
+1 call - Empty -> RINGING_1 [---CALL_RINGING_NEW---] --> Done
+
+CALL_RINGING_WAITING:
+2 calls - CALL_RINGING_NEW -> CALL_ANSWERED_1 -> RINGING_2 [---CALL_RINGING_WAITING---] --> Done
+
+CALL_ANSWERED:
+1 call - Empty -> CALL_OUTGOING
+1st call - CALL_RINGING_NEW -> OFFHOOK_1 [---CALL_ANSWERED_1---] --> Done
+2nd call (case 6) - CALL_RINGING_NEW -> CALL_ANSWERED_1 -> CALL_RINGING_WAITING -> OFFHOOK_2 -> IDLE_2 (both were answered) --> Done (LATE)
+
+CALL_OUTGOING:
+1 call - Empty -> OFFHOOK_1 [---CALL_OUTGOING---] --> Done
+
+CALL_FINISHED:
+1 call - CALL_RINGING_NEW -> CALL_ANSWERED_1 -> IDLE_1 [---CALL_FINISHED_1---] --> Done
+2 calls - CALL_RINGING_NEW -> CALL_ANSWERED_1 -> CALL_RINGING_WAITING -> IDLE_2 (1ª finished in the middle) --> Done
+2 calls - CALL_RINGING_NEW -> CALL_ANSWERED_1 -> CALL_RINGING_WAITING -> OFFHOOK_2 -> IDLE_1 (1ª finished) --> Done (LATE)
+2 calls - CALL_RINGING_NEW -> CALL_ANSWERED_1 -> CALL_RINGING_WAITING -> OFFHOOK_2 -> IDLE_2 (1ª finished in the middle / 2ª finished) --> Done (LATE)
+
+CALL_LOST:
+1 call - CALL_RINGING_NEW -> IDLE_1 [---CALL_LOST_1---] --> Done
+2 calls - CALL_RINGING_NEW -> CALL_ANSWERED_1 -> CALL_RINGING_WAITING -> OFFHOOK_2 -> IDLE_1 (2ª lost) --> Done (LATE)
