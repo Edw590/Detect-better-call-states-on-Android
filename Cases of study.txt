@@ -1,0 +1,94 @@
+1 - Mom calls, I answer. Dad calls, gives up and hangs up. I hang up Mom.
+12-21 00:57:12.428 28356-28356/app I/System.out: RINGING - 123456789
+12-21 00:57:23.209 28356-28356/app I/System.out: OFFHOOK - 123456789
+12-21 00:57:30.682 28356-28356/app I/System.out: RINGING - 123456780
+12-21 00:57:42.761 28356-28356/app I/System.out: OFFHOOK - 123456780
+12-21 00:58:00.996 28356-28356/app I/System.out: IDLE - 123456789
+---------------------------------------------------
+2 - I call Mom and hang up (doesn't matter if she answers or not - it's the same).
+12-21 16:10:57.761 19733-19733/app I/System.out: OFFHOOK - 123456789
+12-21 16:11:01.753 19733-19733/app I/System.out: IDLE - 123456789
+---------------------------------------------------
+3 - Dad calls, I answer, then I hang up Dad.
+12-22 19:25:01.040 27015-27015/app I/System.out: RINGING - 123456780
+12-22 19:25:04.562 27015-27015/app I/System.out: OFFHOOK - 123456780
+12-22 19:25:07.345 27015-27015/app I/System.out: IDLE - 123456780
+---------------------------------------------------
+4 - I call Dad but he doesn't answer. Mom calls and can't (I'm trying to call Dad). Then I give up on Dad.
+    Can't detect this. Will only know I made an outgoing call and ended it.
+12-22 19:31:18.561 27015-27015/app I/System.out: OFFHOOK - 123456780
+12-22 19:31:46.032 27015-27015/app I/System.out: IDLE - 123456780
+---------------------------------------------------
+5 - Mom calls, I answer. Dad calls. I hang up Mom and don't answer Dad.
+12-22 20:24:24.746 15050-15050/app I/System.out: RINGING - 123456789
+12-22 20:24:28.630 15050-15050/app I/System.out: OFFHOOK - 123456789
+12-22 20:24:36.206 15050-15050/app I/System.out: RINGING - 123456780
+12-22 20:24:43.330 15050-15050/app I/System.out: IDLE - 123456780
+---------------------------------------------------
+6 - Mom calls, I answer. Dad calls, I hang up Mom and answer Dad. Then I hang up Dad.
+12-22 19:34:26.312 27015-27015/app I/System.out: RINGING - 123456789
+12-22 19:34:29.076 27015-27015/app I/System.out: OFFHOOK - 123456789
+12-22 19:34:34.972 27015-27015/app I/System.out: RINGING - 123456780
+                                                         - [Hang up Mom]
+12-22 19:34:55.305 27015-27015/app I/System.out: OFFHOOK - 123456780
+12-22 19:35:00.252 27015-27015/app I/System.out: IDLE - 123456780
+---------------------------------------------------
+7 - Mom calls, I answer. Dad calls, gives up and hangs up. Home calls, gives up and hangs up.
+    I hang up Mom.
+12-21 00:57:12.428 28356-28356/app I/System.out: RINGING - 123456789
+12-21 00:57:23.209 28356-28356/app I/System.out: OFFHOOK - 123456789
+12-21 00:57:30.682 28356-28356/app I/System.out: RINGING - 123456780
+12-21 00:57:42.761 28356-28356/app I/System.out: OFFHOOK - 123456780
+12-21 00:57:30.682 28356-28356/app I/System.out: RINGING - 456789123
+12-21 00:57:30.682 28356-28356/app I/System.out: OFFHOOK - 456789123
+12-21 00:58:00.996 28356-28356/app I/System.out: IDLE - 123456789
+---------------------------------------------------
+8 - Mom calls, I answer. Dad calls, I hang up Mom and answer Dad.
+    Home calls, I hang up Dad and answer Home. Then I hang up Home.
+12-22 19:34:26.312 27015-27015/app I/System.out: RINGING - 123456789
+12-22 19:34:29.076 27015-27015/app I/System.out: OFFHOOK - 123456789
+12-22 19:34:34.972 27015-27015/app I/System.out: RINGING - 123456780
+                                                         - [Hang up Mom]
+12-22 19:34:55.305 27015-27015/app I/System.out: OFFHOOK - 123456780
+12-21 00:57:30.682 28356-28356/app I/System.out: RINGING - 456789123
+                                                         - [Hang up Dad]
+12-21 00:57:30.682 28356-28356/app I/System.out: OFFHOOK - 456789123
+12-22 19:35:00.252 27015-27015/app I/System.out: IDLE - 456789123
+---------------------------------------------------
+9 - Mom calls, I answer. Dad calls, I hang up Mom and answer Dad.
+    Home calls, gives up and hangs up and I hang up Dad.
+12-22 19:34:26.312 27015-27015/app I/System.out: RINGING - 123456789
+12-22 19:34:29.076 27015-27015/app I/System.out: OFFHOOK - 123456789
+12-22 19:34:34.972 27015-27015/app I/System.out: RINGING - 123456780
+                                                         - [Hang up Mom]
+12-22 19:34:55.305 27015-27015/app I/System.out: OFFHOOK - 123456780
+12-21 00:57:30.682 28356-28356/app I/System.out: RINGING - 456789123
+12-21 00:57:30.682 28356-28356/app I/System.out: OFFHOOK - 456789123
+12-22 19:35:00.252 27015-27015/app I/System.out: IDLE - 123456780
+---------------------------------------------------
+10 - Mom calls, I answer. Dad calls, I hang up Mom and answer Dad.
+     Home calls, I hang up Dad and Home gives up and hangs up.
+12-29 13:54:43.471 23424-23424/app I/System.out: RINGING - 123456789
+12-29 13:54:52.440 23424-23424/app I/System.out: OFFHOOK - 123456789
+12-29 13:55:05.060 23424-23424/app I/System.out: RINGING - 123456780
+                                                         - [Hang up Mom]
+12-29 13:55:12.007 23424-23424/app I/System.out: OFFHOOK - 123456780
+12-29 13:55:23.601 23424-23424/app I/System.out: RINGING - 456789123
+                                                         - [Hang up Dad]
+12-29 13:55:32.275 23424-23424/app I/System.out: IDLE - 456789123
+---------------------------------------------------
+11 - Mom calls, I answer. Dad calls, I hang up Mom and answer Dad.
+     Home calls, gives up and hangs up. Brother calls, gives up and hangs up.
+     I hang up Dad. OR Dad gives up and hangs up and I hang up Brother (Dad switches with Brother).
+     In this case, the final state of one of the calls will have to be got from the call history.
+12-22 19:34:26.312 27015-27015/app I/System.out: RINGING - 123456789
+12-22 19:34:29.076 27015-27015/app I/System.out: OFFHOOK - 123456789
+12-22 19:34:34.972 27015-27015/app I/System.out: RINGING - 123456780
+                                                         - [Hang up Mom]
+12-22 19:34:55.305 27015-27015/app I/System.out: OFFHOOK - 123456780
+12-21 00:57:30.682 28356-28356/app I/System.out: RINGING - 456789123
+                                                         - [Hang up Home]
+12-21 00:57:30.682 28356-28356/app I/System.out: OFFHOOK - 456789123
+12-21 00:57:30.682 28356-28356/app I/System.out: RINGING - 789123456
+12-22 19:34:55.305 27015-27015/app I/System.out: OFFHOOK - 789123456
+12-22 19:35:00.252 27015-27015/app I/System.out: IDLE - 123456780 / 456789123
